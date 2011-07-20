@@ -30,10 +30,11 @@ import ru.atomation.jbrowser.interfaces.BrowserManager;
 
 /**
  * Snippet creates JFrame window with JBrowser and opens
- * jbrowser web site
+ * jbrowser web site. In menu you can save browser content as image
  * <hr>
- * Фрагмент кода создает окно, со встроенным браузером и открывает
- * веб сайт jbrowser
+ * Фрагмент кода создает окно, со встроенным браузером и открывает 
+ * веб сайт jbrowser.
+ * В меню вы можете сохранить содержимое браузера как изображение
  * 
  * @author caiiiycuk
  */
