@@ -18,7 +18,7 @@ import ru.atomation.jbrowser.interfaces.BrowserAdapter;
 import ru.atomation.jbrowser.interfaces.BrowserManager;
 
 /**
- * Snippet explains how to invoke java code on click
+ * Snippet explains how to invoke java code
  * 
  * @author caiiiycuk
  */
