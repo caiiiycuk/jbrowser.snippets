@@ -1,10 +1,3 @@
-/**
- * No restrictions for this source.
- *
- * Author: CA>>>
- * Site: atomation.ru
- * Mail: Sashusik_EntXXI@Mail.ru
- */
 package ru.atomation.jbrowser.snippets;
 
 import java.awt.Dimension;
@@ -18,24 +11,19 @@ import ru.atomation.jbrowser.impl.JBrowserFrame;
 import ru.atomation.jbrowser.interfaces.BrowserManager;
 
 /**
- * Snippet creates JFrame window with JBrowser and opens
- * jbrowser web site
- * <hr>
- * Фрагмент кода создает окно, со встроенным браузером и открывает
- * веб сайт jbrowser
- * 
+ * This snippet shows how to hide scrollbars
  * @author caiiiycuk
  */
-public class LazyManGettingStartedSnippet {
+public class ScrollSnippet {
 
-    @SuppressWarnings("unchecked")
 	public static void main(String[] args) {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         
         BrowserManager browserManager =
                 new JBrowserBuilder().buildBrowserManager();
 
-        final JBrowserComponent<JFrame> browser =
+        @SuppressWarnings("unchecked")
+		JBrowserComponent<JFrame> browser =
                 (JBrowserComponent<JFrame>) browserManager.getComponentFactory(JBrowserFrame.class).createBrowser();
 
         browser.getComponent().setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -45,5 +33,8 @@ public class LazyManGettingStartedSnippet {
         browser.getComponent().setVisible(true);
 
         browser.setUrl("http://code.google.com/p/jbrowser/");
-    }
+
+        browser.getScrollControl().setScrollbarVisibile(false);
+	}
+
 }
