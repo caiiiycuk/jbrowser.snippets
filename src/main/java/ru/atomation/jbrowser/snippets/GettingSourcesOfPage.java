@@ -31,10 +31,9 @@ import ru.atomation.jbrowser.interfaces.BrowserAdapter;
 import ru.atomation.jbrowser.interfaces.BrowserManager;
 
 /**
- * Snippet creates JFrame window with JBrowser and opens jbrowser web site
+ * Snippet shows how to obtain source code of a page
  * <hr>
- * Фрагмент кода создает окно, со встроенным браузером и открывает веб сайт
- * jbrowser
+ * Фрагмент кода показывает как получить исходный код страницы
  * 
  * @author caiiiycuk
  */
